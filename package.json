@@ -2,8 +2,8 @@
   "name": "quickproxy",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "bin":{
+    "quickproxy": "./index.js"
   },
   "dependencies": {
     "commander": "^8.3.0",
