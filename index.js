@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { program } = require('commander')
 
 program.option('-p, --port <port>', 'Proxy port', 0)
