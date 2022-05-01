@@ -28,7 +28,7 @@ if (!/https?:\/\/.+?/i.test(args[0])) {
 const app = require('express')()
 app.use(require('morgan')('dev'))
 
-const rootPath = `/${opts.path}/`.replace(/\/\//g, '/')
+const rootPath = `/${opts.path}/`.replace(/\/+/g, '/')
 app.use(
   rootPath,
   require('http-proxy-middleware').createProxyMiddleware({
